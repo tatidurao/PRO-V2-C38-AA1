@@ -52,14 +52,10 @@ class Game {
         index = index + 1;
 
         //use os dados do banco de dados para exibir os carros nas direções x e y
-        var x = allPlayers[plr].positionX;
-        var y = height - allPlayers[plr].positionY;
-
-        cars[index - 1].position.x = x;
-        cars[index - 1].position.y = y;
+       
       }
 
-      this.handlePlayerControls();
+      //chame a função de controle
 
       drawSprites();
     }
@@ -67,9 +63,6 @@ class Game {
 
   handlePlayerControls() {
     //manipulando eventos de teclado
-    if (keyIsDown(UP_ARROW)) {
-      player.positionY += 10;
-      player.update();
-    }
+    
   }
 }
