@@ -35,6 +35,8 @@ class Player {
     });
   }
 
+  // criar a função get distance igual get count
+
   update() {
     var playerIndex = "players/player" + this.index;
     database.ref(playerIndex).update({
